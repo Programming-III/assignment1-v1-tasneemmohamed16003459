@@ -23,7 +23,7 @@ Animal::~Animal(){}
         cout << getName() << " " << getAge() <<  " " <<  getIsHungry() << endl;
     }
    void Animal::feed(){
-       if (!getIsHungry()){
+       if (getIsHungry() == true){
        cout << "Animal is fed" << endl;}
        else {
            cout << "Animal is not hungry." << endl;

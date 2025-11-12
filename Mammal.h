@@ -12,7 +12,7 @@ class Mammal : public Animal {
     public:
     Mammal();
     Mammal(string n, int a, bool isH, string f);
-
+    ~Mammal();
 };
 
 #endif

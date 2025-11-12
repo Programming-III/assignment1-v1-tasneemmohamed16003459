@@ -106,7 +106,6 @@ Animal::~Animal(){}
         
 //    }
     
-
 int main()
 {
 Animal a1("Lion", 5, true);

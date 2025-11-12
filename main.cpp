@@ -5,6 +5,7 @@
 #include "Bird.h"
 #include "Reptile.h"
 #include "Enclosure.h"
+#include "Visitor.h"
 using namespace std;
 
 Animal::Animal(){
@@ -59,7 +60,8 @@ Animal::~Animal(){}
         isHungry = isH;
         furColor = f;
     }
-    Mammal::~Mammal(){} */  
+    Mammal::~Mammal(){} */
+    
     
     Enclosure::Enclosure(){
         animals = new Animal [0];
@@ -92,7 +94,7 @@ Animal::~Animal(){}
     } */
     
     
-   /* Visitor::Visitor(){
+   Visitor::Visitor(){
         visitorName = "Unknown";
         ticketsBought = 0;
     }
@@ -100,16 +102,17 @@ Animal::~Animal(){}
         visitorName = v;
         ticketsBought =t;
     }
-    Visitor::~Visitor(){} */
+    Visitor::~Visitor(){} 
     
-  //  void Visitor::displayInfo(){
-        
-//    }
+  void Visitor::displayInfo(){
+        }
     
+
 int main()
 {
 Animal a1("Lion", 5, true);
 cout << a1.getName() << endl;
+
 
     return 0;
 }
